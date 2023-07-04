@@ -1,14 +1,9 @@
-# Welcome to your CDK TypeScript project
+# ec2.InitCommand.argvCommand bug repro
 
-This is a blank project for CDK development with TypeScript.
+This is as small a repro of the ec2.InitCommand.argvCommand bug as I can make.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+`cdk synth` shows the generated template is missing the second '1001' arg from second `command` entry.
 
 ## Useful commands
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
 * `cdk synth`       emits the synthesized CloudFormation template
